@@ -1,0 +1,19 @@
+{
+    "name": "comensee/shell-bundle",
+    "description": "Start a shell on top of boris console",
+    "authors": [
+        {
+            "name": "Alain Bangoula",
+            "email": "alain.bangoula@come-n-see.fr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "d11wtq/boris": "1.0.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Comensee\\ShellBundle": ""
+        }
+    }
+}
