@@ -5,6 +5,8 @@
     <services>
         <service id="comensee.command.shell"
             class="Comensee\ShellBundle\Command\ShellCommand">
+            <argument>%shell_name%</argument>
+            <argument>%delimiter%</argument>
             <tag name="console.command" />
         </service>
     </services>

@@ -1,5 +1,6 @@
 {
     "name": "comensee/shell-bundle",
+    "version": "0.2",
     "description": "Start a shell on top of boris console",
     "authors": [
         {
