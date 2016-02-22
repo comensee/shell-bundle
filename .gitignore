@@ -2,3 +2,4 @@
 vendor/*
 Comensee/ShellBundle/Tests/app/cache/*
 .phpcomplete_extended/
+composer.lock
