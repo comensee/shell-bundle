@@ -1,0 +1,28 @@
+imports:
+    - { resource: parameters.yml }
+
+framework:
+    secret:        test
+    csrf_protection:
+        enabled: true
+    router:        { resource: "%kernel.root_dir%/config/routing.yml" }
+    validation:    { enabled: true, enable_annotations: true }
+    test: ~
+    default_locale: en
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    session:
+        storage_id:     session.storage.mock_file
+
+security:
+    encoders:
+        Symfony\Component\Security\Core\User\User: plaintext
+    providers:
+        in_memory:
+            memory:
+                users:
+                    foo: { password: bar, roles: [ROLE_USER] }
+    firewalls:
+        default:
+            anonymous: ~
